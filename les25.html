@@ -46,10 +46,11 @@ $(document).ready(function(){
             clCount++;                    
          } else if (clCount==3){ 
             $("#par2").css("color","green").css({'font-family':'Verdana','font-weight':'bold','border-style':'solid', 'border-width':'1px'});
-            clCount=1; 
-         }
+            clCount++; 
+         } else if (clCount==4){ 
+            $("#par2").css("color","").css({'font-family':'','font-weight':'','border-style':''});
+            clCount=1; }
     });
-
 
 });                                           
 </script> 
